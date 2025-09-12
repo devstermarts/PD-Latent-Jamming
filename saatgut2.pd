@@ -1,4 +1,4 @@
-#N canvas 492 272 646 505 12;
+#N canvas 431 359 680 505 12;
 #X obj 127 380 tabread4~ \$0-sampler;
 #X obj 127 472 outlet~;
 #X obj 127 309 *~;
@@ -48,7 +48,7 @@
 #X restore 18 197 pd arrayconf;
 #X obj 18 47 bng 14 250 50 0 \$0-opar \$0-opardummy o 5 7 0 8 #fcfcfc #000000 #000000;
 #X obj 167 47 bng 14 250 50 0 \$0-svar \$0-svardummy s 5 7 0 8 #fcfcfc #000000 #000000;
-#X symbolatom 36 47 25 0 0 0 - \$0-filnam \$0-filnamdummy 8;
+#X symbolatom 36 47 25 0 0 2 - \$0-filnam \$0-filnamdummy 8;
 #X obj 328 189 inlet;
 #X obj 328 213 s \$0-ofiler;
 #X obj 127 449 *~;
@@ -131,11 +131,11 @@
 #X connect 7 0 1 0;
 #X connect 8 0 3 0;
 #X restore 137 355 pd showoff;
-#X obj 21 84 hsl 140 70 0 22 0 0 \$0-posidummy \$0-posi empty -2 -10 0 12 #ffffff #ffc7c6 #000000 0 1;
+#X obj 21 84 hsl 140 70 0 41 0 0 \$0-posidummy \$0-posi empty -2 -10 0 12 #ffffff #ffc7c6 #000000 0 1;
 #X obj 145 426 lop~ 1;
 #X obj 127 333 +~ 1;
-#X text 477 192 Author: Martin Heinze;
-#X text 470 208 Last updated: 14.08.25;
+#X text 498 173 Author: Martin Heinze;
+#X text 491 189 Last updated: 14.08.25;
 #X obj 127 260 phasor~, f 13;
 #X obj 21 157 hsl 140 15 0.02 2 1 0 \$0-lookup \$0-lookupinit Lookup\ freq.\ /\ datapoints 8 8 0 8 #fcfcfc #000000 #000000 0 1;
 #X obj 127 237 r \$0-lookup;
@@ -145,13 +145,12 @@
 #X obj 266 237 unpack f f, f 17;
 #X obj 215 213 route bang list;
 #X msg 215 237 0, f 1;
-#X text 211 110 RAVE models encode audio data with a compression rate of 2048 The sample rate of relevant vectors in latent space is <22Hz at 44.1KHz audio sample rate. That means that RAVE decoders can work with as low as 22 data points per latent dimension.;
-#X text 211 21 Saatgut2 is a latent sample player for RAVE models that generates an amount of randomized datapoints in relation to current sample rate and a definable frequency (phasor~) for latent variable lookup. The slider on the right multiplies data point values. Arrays can be saved into and loaded from files.;
+#X text 211 21 Saatgut2 is a latent sample player for RAVE models that generates an amount of randomized datapoints in relation to current sample rate and a definable frequency (phasor~) for latent variable lookup. The slider on the right multiplies data point values. Arrays can be saved into and loaded from files., f 62;
 #X text 34 18 ..:= SAATGUT2 =:..;
 #X obj 167 158 bng 14 250 50 0 \$0-rand \$0-randinit r 5 7 0 8 #fcfcfc #000000 #000000;
 #N canvas 668 268 809 438 (subpatch) 0;
-#X array \$0-sampler 22 float 2;
-#X coords 0 3.7351 22 -3.7351 145 70 2 0 0;
+#X array \$0-sampler 41 float 2;
+#X coords 0 4.87889 41 -4.87889 145 70 2 0 0;
 #X restore 18 84 graph;
 #N canvas 913 542 193 183 presets 0;
 #X obj 7 8 loadbang;
@@ -176,6 +175,7 @@
 #X connect 5 0 0 0;
 #X connect 6 0 7 0;
 #X restore 18 219 pd arcalc;
+#X text 211 110 RAVE models encode audio data with a compression rate of 2048 The sample rate of relevant vectors in latent space is <22Hz at 44.1KHz audio sample rate. That means that RAVE decoders can work with as low as 22 data points per latent dimension., f 62;
 #X connect 0 0 9 0;
 #X connect 2 0 19 0;
 #X connect 7 0 8 0;
