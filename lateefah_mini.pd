@@ -1,4 +1,4 @@
-#N canvas 436 510 537 219 12;
+#N canvas 436 510 539 219 12;
 #X obj 27 31 vsl 15 80 -1 1 0 0 \$0-sl1o \$0-sl1i empty 0 -9 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 45 31 vsl 15 80 -1 1 0 0 \$0-sl2o \$0-sl2i empty 0 -9 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 63 31 vsl 15 80 -1 1 0 0 \$0-sl3o \$0-sl3i empty 0 -9 0 12 #fcfcfc #000000 #000000 0 1;
@@ -207,8 +207,7 @@
 #X obj 153 44 route list bang;
 #X obj 153 68 s \$0-randerinit;
 #X text 355 164 Author: Martin Heinze;
-#X obj 366 68 s \$0-bankseldummy;
-#X obj 366 44 route float list;
+#X obj 336 68 s \$0-bankseldummy;
 #N canvas 92 197 247 127 presets 0;
 #X obj 10 13 inlet;
 #X obj 10 61 unpack f f, f 13;
@@ -225,13 +224,16 @@
 #X connect 4 0 6 0;
 #X connect 5 0 1 0;
 #X connect 6 0 7 0;
-#X restore 420 92 pd presets;
-#X text 334 180 Last updated: 06.11.2025;
+#X restore 414 92 pd presets;
+#X obj 462 68 s \$0-save;
+#X obj 366 44 route float list bang;
+#X text 334 180 Last updated: 12.11.2025;
 #X connect 5 0 18 0;
 #X connect 7 0 4 0;
-#X connect 10 0 22 0;
+#X connect 10 0 24 0;
 #X connect 18 0 6 0;
 #X connect 18 1 19 0;
-#X connect 22 0 21 0;
-#X connect 22 1 23 0;
+#X connect 24 0 21 0;
+#X connect 24 1 22 0;
+#X connect 24 2 23 0;
 #X coords 0 -1 1 1 123 140 2 20 20;
