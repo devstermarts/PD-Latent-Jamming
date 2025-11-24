@@ -8,11 +8,11 @@ Compatible model architectures include [RAVE](https://github.com/acids-ircam/RAV
 
 ## Abstractions
 ### saatR
-<img src="./assets/saatR.png" alt="saatR" width="350" height="auto" \
+<img src="./assets/saatR.png" alt="saatR" width="350" height="auto"> \
 saatR generates random noise sample patterns based on predefined seeds. These patterns can be restarted via bangs to the first inlet. *Range* slider multiplies sample values, *Offset* slider shifts window of values. The pattern can be modulated by an external signal source via the second inlet (switch on Mod. toggle). The *seedR* addon can be used to switch between two pre-set seed values injected into the third inlet of the abstraction.  
 ### Saatgut, Saatgut2
 <img src="./assets/saatgut.png" alt="Saatgut" width="400" height="auto"> \
-Saatgut is a latent sample player that generates arrays (64-512 datapoints) with randomized values and employs signal input for lookup (e.g. phasor~ for loops). The slider on the right multiplies data point values. Arrays can be saved into and loaded from files.
+Saatgut is a latent sample player that generates arrays (64-512 datapoints) with randomized values and employs signal input for lookup (e.g. phasor~ for loops). The slider on the right multiplies data point values. Arrays can be saved into and loaded from files. \
 <img src="./assets/saatgut2.png" alt="Saatgut" width="400" height="auto"> \
 Saatgut2 is a potentially cheaper version of Saatgut that replaces fixed with relative amounts of randomized datapoints in relation to current sample rate and a definable frequency (phasor~) for latent variable lookup.
 ### arseq
