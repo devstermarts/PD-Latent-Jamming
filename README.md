@@ -9,8 +9,8 @@ Compatible model architectures include [RAVE](https://github.com/acids-ircam/RAV
 
 ## Abstractions
 ### sdbx
-Lightweight component that stores up to 99 random values in an array and pushes them sequentially into a noise~ object each time a bang comes in through the first inlet. 
 <img src="./assets/sdbx.png" alt="sdbx" width="350" height="auto"> \
+Lightweight component that stores up to 99 random values in an array and pushes them sequentially into a noise~ object each time a bang comes in through the first inlet. 
 ### saatR
 <img src="./assets/saatR.png" alt="saatR" width="350" height="auto"> \
 saatR generates random noise sample patterns based on predefined seeds. These patterns can be restarted via bangs to the first inlet. *Range* slider multiplies sample values, *Offset* slider shifts window of values. The pattern can be modulated by an external signal source via the second inlet (switch on Mod. toggle). The *seedR* addon can be used to switch between two pre-set seed values injected into the third inlet of the abstraction.  
