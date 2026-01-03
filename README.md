@@ -5,7 +5,7 @@ This repository contains abstractions written in Pure Data that mimick latent em
 \
 Compatible model architectures include [RAVE](https://github.com/acids-ircam/RAVE), [VSCHAOS2](https://github.com/acids-ircam/vschaos2), [MSPrior](https://github.com/caillonantoine/msprior) and [AFTER](https://github.com/acids-ircam/AFTER)) all of which can be loaded using [nn~](https://github.com/acids-ircam/nn_tilde).
 
-*Latest version:* v0.4.0
+*Latest version:* v0.4.1
 
 ## Abstractions
 ### sdbx
