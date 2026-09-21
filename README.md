@@ -5,8 +5,6 @@ This repository contains abstractions written in Pure Data that mimick latent em
 \
 Compatible model architectures include [RAVE](https://github.com/acids-ircam/RAVE), [VSCHAOS2](https://github.com/acids-ircam/vschaos2), [MSPrior](https://github.com/caillonantoine/msprior) and [AFTER](https://github.com/acids-ircam/AFTER)) all of which can be loaded using [nn~](https://github.com/acids-ircam/nn_tilde).
 
-*Latest version:* v0.5.0
-
 ## Abstractions
 
 | Component | Description |
@@ -19,9 +17,10 @@ Compatible model architectures include [RAVE](https://github.com/acids-ircam/RAV
 | [![Saatgut2](./assets/saatgut2.png)](./assets/saatgut.png) | **Saatgut2** is a potentially cheaper version of Saatgut that replaces fixed with relative amounts of randomized data points in relation to current sample rate and a definable frequency (phasor~) for latent variable lookup. |
 | [![saatR](./assets/saatR.png)](./assets/saatR.png) | **saatR** generates random noise sample patterns based on predefined seeds. These patterns can be restarted via bangs to the first inlet. *Range* slider multiplies sample values, *Offset* slider shifts window of values. The pattern can be modulated by an external signal source via the second inlet (switch on Mod. toggle). The **seedR** addon can be used to switch between two pre-set seed values injected into the third inlet of the abstraction. |
 | [![sdbx](./assets/sdbx.png)](./assets/sdbx.png) | **sdbx** is a lightweight component that stores up to 99 random seed values in an array and pushes them sequentially into a noise~ object each time a bang comes in through the first inlet. |
+| [![skimjim](./assets/skimjim.png)](./assets/skimjim.png) | **skimjim** allows accessing dedicated sample offsets in a block. Experimental use for pattern sampling. |
 
 
 ---
 
 ## License
-<a href="https://github.com/devstermarts/PD-Latent-Jamming">PD-Latent-Jamming</a> © 2026 by <a href="https://github.com/devstermarts">Martin Heinze</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+<a href="https://codeberg.org/martstilde/PD-Latent-Jamming">PD-Latent-Jamming</a> © 2026 by <a href="https://codeberg.org/martstilde">Martin Heinze</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
